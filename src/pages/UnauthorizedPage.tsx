@@ -3,17 +3,18 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 
 import Button from "../components/custom-ui/Button/Button";
+import { useEffect } from "react";
 
 function UnauthorizedPage() {
     const auth = useAuth();
     const navigate = useNavigate();
 
-    const handleLoginClick = () => {
+    useEffect(() => {
         auth.logout();
+    }, [])
 
-        setTimeout(() => {
-            navigate(ROUTES.LOGIN_PAGE);
-        }, 100);
+    const handleLoginClick = () => {
+        navigate(ROUTES.LOGIN_PAGE);
     }
 
     return (
