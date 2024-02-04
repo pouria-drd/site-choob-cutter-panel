@@ -1,0 +1,3 @@
+interface ToastIconProps {
+    size?: number;
+}
