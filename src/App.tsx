@@ -11,16 +11,10 @@ import Sidebar from './components/nav/Sidebar';
 import './assets/styles/App.css';
 
 function App() {
-    const { userRole, logout } = useAuth();
+    const { userRole } = useAuth();
     const [isOpen, setIsOpen] = useState(false);
 
     const [navbarForcedIconToggle, setNavbarForcedIconToggle] = useState(true);
-
-    const hasToken = sessionStorage.getItem('bearer');
-
-    if (!hasToken) {
-        logout();
-    }
 
     const isUserAuthenticated = userRole && userRole !== UserRolesEnum.GUEST;
 

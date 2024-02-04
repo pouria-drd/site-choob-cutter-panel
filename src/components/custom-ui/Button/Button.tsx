@@ -8,10 +8,11 @@ interface ButtonProps {
 
     fullWidth?: boolean;
     type?: StatusEnum;
+    isBusy?: boolean;
     disabled?: boolean;
 }
 
-const Button = ({ children, onClick, fullWidth = false, type = StatusEnum.Info, disabled }: ButtonProps) => {
+const Button = ({ children, onClick, fullWidth = false, type = StatusEnum.Info, isBusy, disabled }: ButtonProps) => {
     const typeClass = type;
     const width = fullWidth ? 'w-full' : '';
 
@@ -19,7 +20,7 @@ const Button = ({ children, onClick, fullWidth = false, type = StatusEnum.Info, 
         <button
             className={`custom-button ${typeClass} ${width}`}
             onClick={onClick}
-            disabled={disabled}
+            disabled={disabled || isBusy}
         >
             {children}
         </button>

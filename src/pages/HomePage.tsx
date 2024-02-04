@@ -1,20 +1,18 @@
-import { useState } from "react";
-import { ToastStatusEnum, useToast } from "../components/Toast/ToastProvider";
+import { useEffect } from "react";
+import { ROUTES } from "../router/PathNames";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../contexts/AuthContext";
+import { UserRolesEnum } from "../enums/UserRolesEnum";
 
 function HomePage() {
-    const { showToast } = useToast();
+    const auth = useAuth();
+    const navigate = useNavigate();
 
-    // State to store user data
-    const [isLoading, setIsLoading] = useState(false);
+    useEffect(() => {
+        const isCustomer = auth.userRole === UserRolesEnum.Customer;
 
-    // Function to fetch user data
-    const fetchData = async () => {
-        handleShowToast();
-    };
-
-    const handleShowToast = () => {
-        showToast('خوش آمدید', ToastStatusEnum.Info, "تست", 50000);
-    };
+        isCustomer ? navigate(ROUTES.DASHBOARD) : navigate(ROUTES.LOGIN_PAGE)
+    }, [])
 
     return (
         <div className="bg-white flex flex-col items-center h-full p-10 gap-4">
