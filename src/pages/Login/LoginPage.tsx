@@ -8,9 +8,9 @@ import { ToastStatusEnum, useToast } from "../../components/Toast/ToastProvider"
 import validateInputs from "./LoginMethods";
 import AuthService from "../../services/AuthService";
 
-import RefreshIcon from "../../components/icons/RefreshIcon";
+import RefreshIcon from "../../components/Icons/RefreshIcon";
 import Button from "../../components/custom-ui/Button/Button";
-import SiteChoobIcon from "../../components/icons/SiteChoobIcon";
+import SiteChoobIcon from "../../components/Icons/SiteChoobIcon";
 
 function LoginPage() {
     const auth = useAuth();

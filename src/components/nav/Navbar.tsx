@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import Burger from './icons/Burger';
 import CloseIcon from './icons/CloseIcon';
-import SiteChoobIcon from '../icons/SiteChoobIcon';
+import SiteChoobIcon from '../Icons/SiteChoobIcon';
 
 interface NavbarProps {
     onToggle: () => void;

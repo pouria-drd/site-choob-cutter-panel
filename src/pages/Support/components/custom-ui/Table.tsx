@@ -1,5 +1,5 @@
 import { StatusEnum } from "../../../../enums/StatusEnum";
-import StatusChip from "../../../../components/chips/StatusChip";
+import StatusChip from "../../../../components/Chips/StatusChip";
 
 export interface TableData {
     title: string;

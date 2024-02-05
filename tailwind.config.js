@@ -19,6 +19,7 @@ export default {
         'sc-purple-normal': '#EBEFFB',
 
         'sc-purple-100': '#FAFBFD',
+        'sc-purple-200': '#91A6E8',
         'sc-purple-400': '#6F6F9D',
 
         'sc-gray': '#F6F9FF',
