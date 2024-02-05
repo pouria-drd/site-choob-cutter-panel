@@ -1,8 +1,15 @@
 import { ROUTES } from "./PathNames";
-import PrivateRoute from "./PrivateRoute";
 import { Route, Routes } from "react-router-dom";
 import { UserRolesEnum } from "../enums/UserRolesEnum";
-import { HomePage, DashBoardPage, UnauthorizedPage, NotFoundPage, LoginPage } from "../pages";
+
+import PrivateRoute from "./PrivateRoute";
+
+import {
+    // public
+    HomePage, UnauthorizedPage, NotFoundPage, LoginPage,
+    // private
+    DashBoardPage, SupportPage
+} from "../pages";
 
 function CustomRoutes() {
     return (
@@ -18,6 +25,11 @@ function CustomRoutes() {
                 path={ROUTES.DASHBOARD}
                 element={
                     <PrivateRoute element={<DashBoardPage />}
+                        allowedRoles={[UserRolesEnum.Customer]} />} />
+            <Route
+                path={ROUTES.SUPPORT}
+                element={
+                    <PrivateRoute element={<SupportPage />}
                         allowedRoles={[UserRolesEnum.Customer]} />} />
         </Routes>
     );
