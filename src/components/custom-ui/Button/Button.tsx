@@ -4,7 +4,7 @@ import { StatusEnum } from '../../../enums/StatusEnum';
 
 interface ButtonProps {
     children: ReactNode;
-    onClick: () => void;
+    onClick?: () => void;
 
     fullWidth?: boolean;
     type?: StatusEnum;
@@ -18,7 +18,7 @@ const Button = ({ children, onClick, fullWidth = false, type = StatusEnum.Info, 
 
     return (
         <button
-            className={`custom-button ${typeClass} ${width}`}
+            className={`custom-button ${typeClass} ${width} text-xs sm:text-sm whitespace-nowrap`}
             onClick={onClick}
             disabled={disabled || isBusy}
         >

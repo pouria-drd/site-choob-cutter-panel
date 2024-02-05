@@ -7,7 +7,8 @@ interface BaseCardProps {
 
 const BaseCard = ({ className, children }: BaseCardProps) => {
     return (
-        <div className={`bg-white flex flex-col items-center font-peyda h-full p-10 gap-4 ${className}`}>
+        <div className={`bg-sc-gray flex flex-col items-center
+         font-peyda h-full px-4 gap-4 ${className}`}>
             {children}
         </div>
     )

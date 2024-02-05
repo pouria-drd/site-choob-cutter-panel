@@ -45,7 +45,7 @@ function App() {
                 )}
 
                 <div className="flex flex-col-reverse lg:flex-row transition-all w-full h-full">
-                    <div className="bg-gray-100 overflow-auto w-full h-full p-8">
+                    <div className="bg-sc-gray overflow-auto w-full h-full p-8">
                         {<CustomRoutes />}
                     </div>
 

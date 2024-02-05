@@ -33,6 +33,8 @@ export default {
 
         'sc-brown-500': '#FFEAC7',
         'sc-brown-800': '#7C5109',
+
+        'sc-black': '#292D36',
       },
 
       borderRadius: {
