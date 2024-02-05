@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { ToastStatusEnum, useToast } from "../components/Toast/ToastProvider";
 
+import BaseCard from "../components/custom-ui/Cards/BaseCard";
+
 function DashBoardPage() {
     const { showToast } = useToast();
 
@@ -17,9 +19,11 @@ function DashBoardPage() {
     };
 
     return (
-        <div className="bg-white flex flex-col items-center h-full p-10 gap-4">
-            <p className="toast-progress">Hello from DashBoardPage...</p>
-        </div>
+        <BaseCard>
+            <p className="">
+                Hello from Dashboard...
+            </p>
+        </BaseCard>
     );
 }
 

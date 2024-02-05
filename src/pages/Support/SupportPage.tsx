@@ -1,8 +1,14 @@
+import BaseCard from "../../components/custom-ui/Cards/BaseCard"
+
+
 const SupportPage = () => {
     return (
-        <div className="bg-white flex flex-col items-center h-full p-10 gap-4">
-            <p className="toast-progress">Hello from Support...</p>
-        </div>)
+        <BaseCard>
+            <p className="">
+                Hello from Support...
+            </p>
+        </BaseCard>
+    )
 }
 
 export default SupportPage

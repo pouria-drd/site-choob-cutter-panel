@@ -3,6 +3,7 @@ import { ROUTES } from "../router/PathNames";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import { UserRolesEnum } from "../enums/UserRolesEnum";
+import BaseCard from "../components/custom-ui/Cards/BaseCard";
 
 function HomePage() {
     const auth = useAuth();
@@ -15,9 +16,11 @@ function HomePage() {
     }, [])
 
     return (
-        <div className="bg-white flex flex-col items-center h-full p-10 gap-4">
-            <p className="toast-progress">Hello from home...</p>
-        </div>
+        <BaseCard className="justify-center">
+            <p className="text-lg">
+                لطفا صبر کنید ...
+            </p>
+        </BaseCard>
     );
 }
 
