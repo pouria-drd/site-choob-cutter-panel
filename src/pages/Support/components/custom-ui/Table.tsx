@@ -4,6 +4,7 @@ import StatusChip from "../../../../components/Chips/StatusChip";
 import { ROUTES } from "../../../../router/PathNames";
 
 export interface TableData {
+    id: number;
     title: string;
     priority: string;
     time: string;
@@ -69,7 +70,7 @@ const Table = ({ data }: TableProps) => {
                         <td className="px-6 py-4 whitespace-nowrap">
                             <button className="text-sc-blue-normal"
                                 onClick={() => {
-                                    navigate(ROUTES.CHAT + row.title)
+                                    navigate(ROUTES.CHAT + row.id)
                                 }}>
                                 ...مشاهده
                             </button>

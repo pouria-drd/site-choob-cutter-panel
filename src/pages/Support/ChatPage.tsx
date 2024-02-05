@@ -6,7 +6,7 @@ interface UrlParams {
 
 
 const ChatPage = () => {
-    const params = useParams<{ chatID: string; }>();
+    const params = useParams<{ chatID?: string; }>();
     const { chatID } = Object.assign({}, params) as UrlParams;
 
     return (

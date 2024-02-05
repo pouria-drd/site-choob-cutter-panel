@@ -35,7 +35,7 @@ function CustomRoutes() {
                         allowedRoles={[UserRolesEnum.Customer]} />} />
 
             <Route
-                path={ROUTES.CHAT}
+                path={ROUTES.CHAT + ":chatID"}
                 element={
                     <PrivateRoute element={<ChatPage />}
                         allowedRoles={[UserRolesEnum.Customer]} />} />

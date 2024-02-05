@@ -14,16 +14,16 @@ const SupportPage = () => {
     const handleClose = () => setIsOpen(false);
 
     const data: TableData[] = [
-        { title: 'عنوان 1', priority: 'اولویت 1', time: 'زمان 1', status: '0' },
-        { title: 'عنوان 2', priority: 'اولویت 2', time: 'زمان 2', status: '1' },
-        { title: 'عنوان 3', priority: 'اولویت 3', time: 'زمان 3', status: '2' },
-        { title: 'عنوان 4', priority: 'اولویت 4', time: 'زمان 4', status: '0' },
-        { title: 'عنوان 5', priority: 'اولویت 5', time: 'زمان 5', status: '1' },
-        { title: 'عنوان 6', priority: 'اولویت 6', time: 'زمان 6', status: '2' },
-        { title: 'عنوان 7', priority: 'اولویت 7', time: 'زمان 7', status: '0' },
-        { title: 'عنوان 8', priority: 'اولویت 8', time: 'زمان 8', status: '1' },
-        { title: 'عنوان 9', priority: 'اولویت 9', time: 'زمان 9', status: '2' },
-        { title: 'عنوان 10', priority: 'اولویت 10', time: 'زمان 10', status: '0' },
+        { id: 1, title: 'عنوان 1', priority: 'اولویت 1', time: 'زمان 1', status: '0' },
+        { id: 1, title: 'عنوان 2', priority: 'اولویت 2', time: 'زمان 2', status: '1' },
+        { id: 1, title: 'عنوان 3', priority: 'اولویت 3', time: 'زمان 3', status: '2' },
+        { id: 1, title: 'عنوان 4', priority: 'اولویت 4', time: 'زمان 4', status: '0' },
+        { id: 1, title: 'عنوان 5', priority: 'اولویت 5', time: 'زمان 5', status: '1' },
+        { id: 1, title: 'عنوان 6', priority: 'اولویت 6', time: 'زمان 6', status: '2' },
+        { id: 1, title: 'عنوان 7', priority: 'اولویت 7', time: 'زمان 7', status: '0' },
+        { id: 1, title: 'عنوان 8', priority: 'اولویت 8', time: 'زمان 8', status: '1' },
+        { id: 1, title: 'عنوان 9', priority: 'اولویت 9', time: 'زمان 9', status: '2' },
+        { id: 1, title: 'عنوان 10', priority: 'اولویت 10', time: 'زمان 10', status: '0' },
     ];
 
 
