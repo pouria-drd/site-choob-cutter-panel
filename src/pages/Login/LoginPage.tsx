@@ -156,7 +156,7 @@ function LoginPage() {
 
                     <div className="flex flex-col w-72 gap-4">
                         <input
-                            className="base-input"
+                            className="base-input h-12"
                             type="email"
                             placeholder="ایمیل"
                             value={requestSessionDTO.email}
@@ -167,7 +167,7 @@ function LoginPage() {
                         />
 
                         <input
-                            className="base-input"
+                            className="base-input h-12"
                             type="password"
                             placeholder="رمز عبور"
                             value={requestSessionDTO.password}
@@ -181,7 +181,8 @@ function LoginPage() {
                             <div className="flex items-center gap-4">
                                 <div className="bg-sc-purple-normal flex items-center justify-between h-full rounded-md p-2">
                                     <input
-                                        className="bg-transparent outline-none text-sc-blue-normal w-1/2 text-center"
+                                        className="bg-transparent outline-none
+                                         text-sc-blue-normal w-full text-center"
                                         type="tel"
                                         maxLength={4}
                                         placeholder="کپچا"

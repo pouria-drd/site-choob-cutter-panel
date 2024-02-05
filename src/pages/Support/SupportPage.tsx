@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./components/custom-ui/Header";
 import Button from "../../components/custom-ui/Button/Button";
-import FilterButton from "./components/custom-ui/FilterButton";
+import FilterButton from "./components/custom-ui/Buttons/FilterButton";
 import BaseCard from "../../components/custom-ui/Cards/BaseCard";
 import Table, { TableData } from "./components/custom-ui/Table";
 import NewSupportModal from "./components/Modals/NewSupportModal";

@@ -101,18 +101,18 @@
 
 .base-input {
   @apply transition-all duration-200
-    border focus:border-none
-    rounded-md focus:rounded
-    bg-sc-purple-normal text-sc-blue-normal
-    outline-none focus:outline focus:outline-sc-blue-normal
-    placeholder:text-sc-gray-500 px-4 py-2 min-h-12;
-}
-
-.base-text-area {
-  @apply transition-all duration-200
-    border focus:border-none
+    border-none
     rounded-md focus:rounded
     bg-sc-purple-normal text-sc-blue-normal
     outline-none focus:outline focus:outline-sc-blue-normal
     placeholder:text-sc-gray-500 px-4 py-2;
+}
+
+.base-text-area {
+  @apply transition-all duration-200
+    border-none
+    rounded-md focus:rounded
+    bg-sc-purple-normal text-sc-blue-normal
+    outline-none focus:outline focus:outline-sc-blue-normal
+    placeholder:text-sc-gray-500 px-4 py-2 min-h-40;
 }

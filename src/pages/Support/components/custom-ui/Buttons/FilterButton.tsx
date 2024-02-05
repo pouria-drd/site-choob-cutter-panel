@@ -1,4 +1,4 @@
-import FilterIcon from "../Icons/FilterIcon";
+import FilterIcon from "../../Icons/FilterIcon";
 
 interface FilterButtonProps {
     onClick?: () => void;
