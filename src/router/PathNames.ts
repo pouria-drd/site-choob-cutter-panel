@@ -7,5 +7,6 @@ export const ROUTES = {
 
   // private
   SUPPORT: "/support",
+  CHAT: "/chat/:chatID",
   DASHBOARD: "/dashboard",
 };

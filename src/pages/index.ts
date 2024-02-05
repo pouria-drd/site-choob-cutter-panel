@@ -6,5 +6,6 @@ export { default as UnauthorizedPage } from "./UnauthorizedPage";
 
 // private
 export { default as DashBoardPage } from "./DashBoardPage";
+export { default as ChatPage } from "./Support/ChatPage";
 export { default as SupportPage } from "./Support/SupportPage";
 

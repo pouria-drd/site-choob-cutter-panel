@@ -1,5 +1,7 @@
+import { useNavigate } from "react-router-dom";
 import { StatusEnum } from "../../../../enums/StatusEnum";
 import StatusChip from "../../../../components/Chips/StatusChip";
+import { ROUTES } from "../../../../router/PathNames";
 
 export interface TableData {
     title: string;
@@ -14,6 +16,8 @@ interface TableProps {
 }
 
 const Table = ({ data }: TableProps) => {
+    const navigate = useNavigate()
+
     const handleStatus = (status: string) => {
         var result = <StatusChip text={"درحال بررسی"} />
 
@@ -63,7 +67,10 @@ const Table = ({ data }: TableProps) => {
                 {data.map((row, i) => (
                     <tr key={i} className='text-right text-sm sm:text-base'>
                         <td className="px-6 py-4 whitespace-nowrap">
-                            <button className="text-sc-blue-normal">
+                            <button className="text-sc-blue-normal"
+                                onClick={() => {
+                                    navigate(ROUTES.CHAT + row.title)
+                                }}>
                                 ...مشاهده
                             </button>
                         </td>

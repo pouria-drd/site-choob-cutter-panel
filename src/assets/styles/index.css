@@ -114,5 +114,5 @@
     rounded-md focus:rounded
     bg-sc-purple-normal text-sc-blue-normal
     outline-none focus:outline focus:outline-sc-blue-normal
-    placeholder:text-sc-gray-500 px-4 py-2 min-h-40;
+    placeholder:text-sc-gray-500 px-4 py-2;
 }

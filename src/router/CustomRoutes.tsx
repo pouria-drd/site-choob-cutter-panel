@@ -8,7 +8,8 @@ import {
     // public
     HomePage, UnauthorizedPage, NotFoundPage, LoginPage,
     // private
-    DashBoardPage, SupportPage
+    DashBoardPage, SupportPage,
+    ChatPage
 } from "../pages";
 
 function CustomRoutes() {
@@ -26,10 +27,17 @@ function CustomRoutes() {
                 element={
                     <PrivateRoute element={<DashBoardPage />}
                         allowedRoles={[UserRolesEnum.Customer]} />} />
+
             <Route
                 path={ROUTES.SUPPORT}
                 element={
                     <PrivateRoute element={<SupportPage />}
+                        allowedRoles={[UserRolesEnum.Customer]} />} />
+
+            <Route
+                path={ROUTES.CHAT}
+                element={
+                    <PrivateRoute element={<ChatPage />}
                         allowedRoles={[UserRolesEnum.Customer]} />} />
         </Routes>
     );

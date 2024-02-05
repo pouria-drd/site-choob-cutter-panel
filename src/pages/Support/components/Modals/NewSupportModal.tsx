@@ -33,10 +33,10 @@ const NewSupportModal = ({ isOpen, onClose }: NewSupportModalProps) => {
 
                     <Dropdown title="اولویت" options={options} />
 
-                    <textarea className="base-text-area resize-none w-full min-h-40 h-40 r2l" placeholder="توضیحات" />
+                    <textarea className="base-text-area resize-none w-full min-h-28 h-28 r2l" placeholder="توضیحات" />
 
 
-                    <div className="border border-dashed border-spacing-8 border-sc-purple-200 rounded-md w-full min-h-28 h-28">
+                    <div className="border border-dashed border-spacing-8 border-sc-purple-200 rounded-md w-full min-h-20 h-20">
 
                     </div>
 
